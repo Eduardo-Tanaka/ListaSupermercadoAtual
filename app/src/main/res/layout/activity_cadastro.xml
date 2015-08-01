@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="javali.com.br.listasupermercado.CadastroActivity"
+    android:background="@drawable/android_bg" >
+
+    <TextView
+        style="@style/styleCustomLabel"
+        android:text="@string/cadastrar"
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        style="@style/styleCustomEditText"
+        android:id="@+id/txtUsuario1"
+        android:inputType="text"
+        android:hint="@string/usuario"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/textView2"/>
+
+    <EditText
+        style="@style/styleCustomEditText"
+        android:inputType="textPassword"
+        android:id="@+id/txtSenha1"
+        android:layout_below="@id/txtUsuario1"
+        android:hint="@string/senha"/>
+
+    <EditText
+        style="@style/styleCustomEditText"
+        android:inputType="textPassword"
+        android:id="@+id/txtSenha2"
+        android:layout_below="@id/txtSenha1"
+        android:hint="@string/senha"
+        />
+
+    <LinearLayout
+        style="@style/styleCustom"
+        android:layout_below="@id/txtSenha2"
+        android:layout_centerHorizontal="true">
+        <Button
+            style="@style/styleCustomBtn"
+            android:text="@string/logar"
+            android:id="@+id/btnLogar1"
+            android:onClick="logar"/>
+
+        <Button
+            style="@style/styleCustomBtn"
+            android:text="@string/cadastrar"
+            android:id="@+id/btnCadastrar1"
+            android:onClick="cadastrar"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/baseProgressBar4"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="#eaebe9"
+        android:alpha="0.7">
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

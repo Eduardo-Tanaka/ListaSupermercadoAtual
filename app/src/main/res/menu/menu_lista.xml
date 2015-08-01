@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="javali.com.br.listasupermercado.ListaActivity">
+
+    <item android:id="@+id/portugues" android:title="@string/portugues"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/ingles" android:title="@string/ingles"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menuLista"
+        android:title="@string/listaDeCompras"
+        android:icon="@drawable/ico_buy30"
+        app:showAsAction="always" />
+    <item android:id="@+id/menuBanco"
+        android:title="@string/bancoProdutos"
+        android:icon="@drawable/ico_lista30"
+        app:showAsAction="always" />
+    <item android:id="@+id/sair"
+        android:title="@string/sair"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

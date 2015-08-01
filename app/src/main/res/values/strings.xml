@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Help Me Buy</string>
+    <string name="ingles">Ingles</string>
+    <string name="portugues">Portugues</string>
+    <string name="adicionarLista">Adicionar à Minha Lista</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="logar">Logar</string>
+    <string name="listaDeCompras">Lista de Compras</string>
+    <string name="bancoProdutos">Banco de Produtos</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="sair">Sair</string>
+    <string name="senhas">Senhas devem ser iguais</string>
+    <string name="erroLogin">Login Inválido</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="msg">Remover Item?</string>
+    <string name="usuarioJaExiste">Usuário já Existe</string>
+    <string name="usuarioCadastrado">Usuário Cadastrado</string>
+    <string name="adicioneUmProdutoValido">Adicione Um Produto Válido</string>
+
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+</resources>

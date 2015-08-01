@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_bg">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/cadastrar"
+                android:id="@+id/textView2"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="25dp"
+                android:id="@+id/txtUsuario1"
+                android:hint="@string/usuario"
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/textView2"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:inputType="textPassword"
+                android:id="@+id/txtSenha1"
+                android:layout_below="@id/txtUsuario1"
+                android:hint="@string/senha"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:inputType="textPassword"
+                android:id="@+id/txtSenha2"
+                android:layout_below="@id/txtSenha1"
+                android:hint="@string/senha"
+                />
+
+            <LinearLayout
+                style="@style/styleCustom"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtSenha2">
+                <Button
+                    style="@style/styleCustomBtn"
+                    android:text="@string/logar"
+                    android:id="@+id/btnLogar1"
+                    android:onClick="logar"/>
+
+                <Button
+                    style="@style/styleCustomBtn"
+                    android:text="@string/cadastrar"
+                    android:id="@+id/btnCadastrar1"
+                    android:onClick="cadastrar"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/baseProgressBar4"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="#eaebe9"
+                android:alpha="0.7">
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
